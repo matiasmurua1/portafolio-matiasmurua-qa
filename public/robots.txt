@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://matias-murua-qa.matiasmurua1.chatgpt.site/sitemap.xml

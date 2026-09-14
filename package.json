@@ -1,0 +1,35 @@
+{
+  "name": "matias-murua-qa-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20.19.0" },
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "node scripts/generate-static.mjs && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "lint": "oxlint src cypress scripts vite.config.js",
+    "test:content": "node scripts/validate-content.mjs",
+    "test:e2e": "cypress run",
+    "test:e2e:open": "cypress open",
+    "test:ci": "start-server-and-test preview http://127.0.0.1:4173 test:e2e",
+    "validate": "npm run lint && npm run test:content && npm run build",
+    "cv:generate": "node scripts/create-cv.mjs",
+    "cv:verify": "node scripts/render-pdf.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "^1.45.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@napi-rs/canvas": "^1.0.9",
+    "@vitejs/plugin-react": "^6.1.1",
+    "cypress": "^16.0.0",
+    "oxlint": "^1.82.0",
+    "pdfjs-dist": "^6.3.289",
+    "pdfkit": "^0.20.2",
+    "start-server-and-test": "^3.0.12",
+    "vite": "^8.3.0"
+  }
+}
