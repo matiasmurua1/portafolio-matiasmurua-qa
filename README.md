@@ -11,7 +11,7 @@ The interface starts in English and includes a visible English/Spanish switch. I
 - Reusable components and centralized content data
 - Maintainable CSS with responsive and reduced-motion support
 - Lucide icons
-- Cypress end-to-end tests
+- Cypress end-to-end tests with Cucumber and Page Object Model
 - GitHub Actions deployment to GitHub Pages
 
 ## Local setup
