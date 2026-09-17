@@ -2,7 +2,7 @@ import { Given, When, Then } from '@badeball/cypress-cucumber-preprocessor';
 import { portfolioPage } from '../../pages/PortfolioPage';
 
 Given('the visitor opens the QA portfolio', () => { portfolioPage.visit(); });
-Then('the professional name and QA title are visible', () => { portfolioPage.heroName().should('contain', 'Matías Nahuel Murua Martínez'); portfolioPage.heroTitle().should('contain', 'QA Engineer | Manual & Automation'); });
+Then('the professional name and QA title are visible', () => { portfolioPage.heroName().should('contain', 'Matías Nahuel Murua Martínez'); portfolioPage.heroTitle().should('contain', 'Software Engineer | QA Engineer | Manual & Automation'); });
 Then('the page title identifies Matías Murua', () => { cy.title().should('contain', 'Matías Murua'); });
 Then('the page has no horizontal overflow', () => { portfolioPage.hasNoHorizontalOverflow(); });
 When('the visitor selects View my projects', () => { portfolioPage.selectProjects(); });
