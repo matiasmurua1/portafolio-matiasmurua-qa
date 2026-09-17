@@ -336,3 +336,60 @@ a.contact-link:hover { transform: translateX(3px); border-color: var(--accent); 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+/* Light professional theme */
+:root {
+  color-scheme: light;
+  --bg: #f7faf9;
+  --bg-deep: #edf4f3;
+  --surface: #ffffff;
+  --surface-strong: #f0f6f5;
+  --surface-soft: #e5efee;
+  --text: #173230;
+  --text-soft: #385351;
+  --muted: #5d7471;
+  --faint: #6c8581;
+  --line: rgba(23, 50, 48, .14);
+  --line-strong: rgba(23, 50, 48, .24);
+  --accent: #087f72;
+  --accent-bright: #0a9787;
+  --accent-dark: #e2f3ef;
+  --warning: #9a5b00;
+}
+
+body::before { opacity: .5; background-image: linear-gradient(rgba(8, 127, 114, .055) 1px, transparent 1px), linear-gradient(90deg, rgba(8, 127, 114, .055) 1px, transparent 1px); }
+body::after { background: radial-gradient(circle, rgba(8, 127, 114, .1), transparent 66%); }
+::selection { color: #fff; }
+.skip-link, .language-switch button.active, .button-primary { color: #fff; }
+
+.site-header { background: color-mix(in srgb, var(--bg) 88%, transparent); }
+.brand-mark { border-color: rgba(8, 127, 114, .35); background: rgba(8, 127, 114, .08); color: var(--accent); }
+.language-switch { background: rgba(23, 50, 48, .035); }
+.availability { border-color: rgba(8, 127, 114, .25); color: #14544d; background: rgba(8, 127, 114, .08); }
+.availability span { box-shadow: 0 0 0 4px rgba(8, 127, 114, .1), 0 0 14px rgba(8, 127, 114, .32); }
+.professional-title { color: #264744; }
+.button-secondary { color: var(--text); border-color: #aebfbc; background: #fff; }
+.button-ghost { background: rgba(255, 255, 255, .5); }
+
+.quality-console { border-color: rgba(8, 127, 114, .22); background: linear-gradient(145deg, #ffffff, #eaf5f3); box-shadow: 0 24px 60px rgba(31, 72, 66, .12), inset 0 1px rgba(255, 255, 255, .8); }
+.quality-console::before { border-color: rgba(8, 127, 114, .12); }
+.console-header { color: #58716d; }
+.trace-line > span, .trace-line em { color: #64807b; }
+.trace-line b { color: #244642; }
+.trace-line.active { border-color: rgba(8, 127, 114, .25); background: rgba(8, 127, 114, .075); }
+
+.process-grid, .profile-strip, .skill-card, .case-card, .evidence-card, .credential-panel { background: var(--surface); }
+.skill-card { background: linear-gradient(145deg, #ffffff, #f1f7f6); }
+.skill-card li, .tag-list span { background: #f5f9f8; }
+.engagement:hover { background: rgba(8, 127, 114, .045); }
+.case-card { background: linear-gradient(145deg, #ffffff, #f4f9f8); }
+.case-card__footer { background: #edf5f3; }
+.evidence-card { background: #fff; }
+.evidence-icon, .language-records span { background: rgba(8, 127, 114, .09); }
+.contact-section { border-color: rgba(8, 127, 114, .25); background: linear-gradient(135deg, #e9f7f4, #ffffff); box-shadow: 0 28px 70px rgba(31, 72, 66, .12); }
+.contact-notice { background: rgba(154, 91, 0, .08); color: #6e4300; }
+.contact-link { background: rgba(255, 255, 255, .74); }
+
+@media (max-width: 1060px) {
+  .nav-links { background: rgba(255, 255, 255, .98); box-shadow: 0 20px 50px rgba(31, 72, 66, .16); }
+}

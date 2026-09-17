@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://matias-murua-qa.matiasmurua1.chatgpt.site/sitemap.xml
+Sitemap: https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPOSITORY_NAME/sitemap.xml

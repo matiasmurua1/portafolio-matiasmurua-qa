@@ -30,9 +30,9 @@ export const portfolio = {
       es: 'Disponible para oportunidades remotas',
     },
     yearsOfExperience: '4+',
-    email: '',
-    linkedin: '',
-    github: '',
+    email: 'muruamatias.96@gmail.com',
+    linkedin: 'https://www.linkedin.com/in/matiasmurua/',
+    github: 'https://github.com/matiasmurua1',
     cv: 'cv-matias-murua.pdf',
   },
   navigation: [
