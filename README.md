@@ -71,7 +71,7 @@ npm run cv:verify
 
 ## Cypress coverage
 
-The automated suite verifies initial load, professional identity, in-page navigation, language switching, case-study visibility, contact behavior, PDF availability, and basic mobile responsiveness. Tests live in [`cypress/e2e/portfolio.cy.js`](cypress/e2e/portfolio.cy.js).
+The automated suite verifies initial load, professional identity, accessible section names, in-page navigation, language switching, case-study visibility, contact behavior, PDF availability, and mobile responsiveness. Scenarios live in [`cypress/e2e/features/front/portfolio.feature`](cypress/e2e/features/front/portfolio.feature), with reusable actions and selectors in the Page Object.
 
 ## Publish free with GitHub Pages
 

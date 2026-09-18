@@ -13,8 +13,8 @@ export const portfolio = {
     name: 'Matías Nahuel Murua Martínez',
     shortName: 'Matías Murua',
     title: {
-      en: 'QA Engineer | Manual & Automation',
-      es: 'QA Engineer | Testing Manual y Automation',
+      en: 'Software Engineer | QA Engineer | Manual & Automation',
+      es: 'Software Engineer | QA Engineer | Testing Manual y Automation',
     },
     summary: {
       en: 'Software Engineer and Manual & Automation QA professional with 4+ years of experience across e-commerce, SaaS platforms, telecommunications, and enterprise dashboards.',

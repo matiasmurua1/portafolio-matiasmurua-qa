@@ -19,7 +19,7 @@ export function Header({ language, setLanguage, menuOpen, setMenuOpen, personal,
         <span>{personal.shortName}</span>
       </a>
 
-      <nav className={menuOpen ? 'nav-links is-open' : 'nav-links'} aria-label={text.mainNavigation}>
+      <nav id="primary-navigation" className={menuOpen ? 'nav-links is-open' : 'nav-links'} aria-label={text.mainNavigation}>
         {navigation.map((item) => (
           <a key={item.id} href={`#${item.id}`} onClick={() => setMenuOpen(false)}>{item.label[language]}</a>
         ))}
@@ -39,7 +39,7 @@ export function Header({ language, setLanguage, menuOpen, setMenuOpen, personal,
             </button>
           ))}
         </fieldset>
-        <button className="menu-button" type="button" aria-label={text.toggleNavigation} aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)} data-cy="menu-button">
+        <button className="menu-button" type="button" aria-label={text.toggleNavigation} aria-controls="primary-navigation" aria-expanded={menuOpen} onClick={() => setMenuOpen((current) => !current)} data-cy="menu-button">
           {menuOpen ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
         </button>
       </div>

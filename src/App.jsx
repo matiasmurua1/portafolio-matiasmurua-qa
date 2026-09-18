@@ -134,7 +134,7 @@ function App() {
         </section>
 
         <section className="section skills-section" id="skills" aria-labelledby="skills-title">
-          <SectionHeading kicker={t.skillsKicker} title={t.skillsTitle} description={t.skillsDescription} />
+          <SectionHeading id={'skills-title'} kicker={t.skillsKicker} title={t.skillsTitle} description={t.skillsDescription} />
           <div className="skills-grid">
             {portfolio.skillGroups.map((group) => (
               <article className="skill-card" key={group.title.en}>
@@ -147,7 +147,7 @@ function App() {
         </section>
 
         <section className="section stack-section" id="stack" aria-labelledby="stack-title">
-          <SectionHeading kicker={t.stackKicker} title={t.stackTitle} description={t.stackDescription} />
+          <SectionHeading id={'stack-title'} kicker={t.stackKicker} title={t.stackTitle} description={t.stackDescription} />
           <div className="stack-table">
             {portfolio.stack.map((group, index) => (
               <div className="stack-row" key={group.label.en}>
@@ -160,7 +160,7 @@ function App() {
         </section>
 
         <section className="section experience-section" id="experience" aria-labelledby="experience-title">
-          <SectionHeading kicker={t.experienceKicker} title={t.experienceTitle} description={localize(portfolio.experience.intro)} />
+          <SectionHeading id={'experience-title'} kicker={t.experienceKicker} title={t.experienceTitle} description={localize(portfolio.experience.intro)} />
           <div className="engagement-list">
             {portfolio.experience.engagements.map((item, index) => (
               <article className="engagement" key={item.code}>
@@ -173,14 +173,14 @@ function App() {
         </section>
 
         <section className="section projects-section" id="projects" aria-labelledby="projects-title">
-          <SectionHeading kicker={t.caseKicker} title={t.caseTitle} description={t.caseDescription} />
+          <SectionHeading id={'projects-title'} kicker={t.caseKicker} title={t.caseTitle} description={t.caseDescription} />
           <div className="case-list" data-cy="projects-list">
             {portfolio.caseStudies.map((study) => <CaseStudyCard key={study.id} study={study} language={language} labels={t} />)}
           </div>
         </section>
 
         <section className="section evidence-section" id="evidence" aria-labelledby="evidence-title">
-          <SectionHeading kicker={t.evidenceKicker} title={t.evidenceTitle} description={t.evidenceDescription} />
+          <SectionHeading id={'evidence-title'} kicker={t.evidenceKicker} title={t.evidenceTitle} description={t.evidenceDescription} />
           <div className="evidence-grid">
             {portfolio.evidence.map((item) => <EvidenceCard key={item.title.en} item={item} language={language} />)}
           </div>

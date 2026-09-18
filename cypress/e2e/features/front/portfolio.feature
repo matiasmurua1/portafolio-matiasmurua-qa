@@ -11,6 +11,9 @@ Feature: QA portfolio
     And the page title identifies Matías Murua
     And the page has no horizontal overflow
 
+  Scenario: Main sections have accessible names
+    Then every labelled section references a visible heading
+
   Scenario: Navigate to case studies
     When the visitor selects View my projects
     Then the case studies section is visible
@@ -35,4 +38,5 @@ Feature: QA portfolio
     When the visitor uses a mobile viewport
     Then the professional name is visible on mobile
     And the navigation menu can be opened
+    And the menu button controls the main navigation
     And the mobile page has no horizontal overflow

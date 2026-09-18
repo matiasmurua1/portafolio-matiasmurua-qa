@@ -41,7 +41,7 @@ function rule() {
 
 pageHeader();
 doc.moveDown(.8).fillColor(colors.ink).font('Helvetica-Bold').fontSize(27).text('Matias Nahuel Murua Martinez', { lineGap: 1 });
-doc.moveDown(.25).fillColor(colors.teal).font('Helvetica-Bold').fontSize(13).text('QA ENGINEER  /  MANUAL & AUTOMATION TESTING');
+doc.moveDown(.25).fillColor(colors.teal).font('Helvetica-Bold').fontSize(13).text('SOFTWARE ENGINEER  /  QA ENGINEER  /  MANUAL & AUTOMATION TESTING');
 doc.moveDown(.7).fillColor(colors.ink).font('Helvetica').fontSize(9.7).text('Software Engineer and QA professional with 4+ years of experience in e-commerce, SaaS platforms, telecommunications, and enterprise dashboards. I uncover product risk early and connect requirements with clear evidence across web, API, integration, and database layers.', { lineGap: 4 });
 doc.moveDown(.8).fillColor(colors.muted).font('Helvetica').fontSize(7.2).text('CORDOBA, ARGENTINA  /  REMOTE: ARGENTINA · LATAM · INTERNATIONAL');
 
